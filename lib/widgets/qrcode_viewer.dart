@@ -78,42 +78,16 @@ class QrcodeBottomSheet extends StatelessWidget {
                 ),
                 child: Column(
                   children: [
-                    Stack(
-                      alignment: Alignment.center,
-                      children: [
-                        QrImageView(
-                          data: qrData,
-                          size: 260, // Taille augmentée pour une meilleure densité de pixels
-                          version: QrVersions.auto,
-                          errorCorrectionLevel: QrErrorCorrectLevel.H,
-                          gapless: true,
-                          embeddedImage: const AssetImage("assets/images/mamba.png"),
-                          embeddedImageStyle: const QrEmbeddedImageStyle(
-                            size: Size(46, 46), // Taille calculée pour ne pas gêner les modules
-                          ),
-                        ),
-                        // Container blanc décoratif autour du logo pour le faire ressortir sans bloquer les modules
-                        Container(
-                          width: 46,
-                          height: 46,
-                          decoration: BoxDecoration(
-                            color: Colors.white,
-                            borderRadius: BorderRadius.circular(8),
-                            boxShadow: [
-                              BoxShadow(
-                                color: Colors.black.withOpacity(0.1),
-                                blurRadius: 4,
-                                offset: const Offset(0, 2),
-                              )
-                            ],
-                          ),
-                          padding: const EdgeInsets.all(4),
-                          child: Image.asset(
-                            "assets/images/mamba.png",
-                            fit: BoxFit.contain,
-                          ),
-                        )
-                      ],
+                    QrImageView(
+                      data: qrData,
+                      size: 260, // Taille augmentée pour une meilleure densité de pixels
+                      version: QrVersions.auto,
+                      errorCorrectionLevel: QrErrorCorrectLevel.H,
+                      gapless: true,
+                      embeddedImage: const AssetImage("assets/images/mamba_bg.png"),
+                      embeddedImageStyle: const QrEmbeddedImageStyle(
+                        size: Size(46, 46), // Taille calculée pour ne pas gêner les modules
+                      ),
                     ),
                     const SizedBox(height: 15),
                     Text(

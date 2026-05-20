@@ -1,5 +1,5 @@
 import 'dart:ui';
-import 'package:taxenew/screens/auth/login2.dart';
+import '/screens/auth/login2.dart';
 
 import '../components/kiosk_components.dart';
 import '/theme/style.dart';

@@ -23,8 +23,6 @@ dependencies:
   easy_date_timeline: ^1.0.3
   share_plus: ^7.2.1
   path_provider: ^2.1.5
-  qr_code_scanner_plus: ^2.0.14
-  mobile_scanner:
 
 
 dev_dependencies:

@@ -6,7 +6,6 @@ import 'package:flutter_easyloading/flutter_easyloading.dart';
 import 'package:get/get.dart';
 
 import '/screens/home_screen.dart';
-import '/screens/main_screen_agent.dart';
 import '/services/api_manager.dart';
 
 class Login2 extends StatefulWidget {
@@ -51,7 +50,7 @@ class _Login2State extends State<Login2> {
         if (result.role == 'resident') {
           Get.offAll(() => const HomeScreen());
         } else if (result.role == 'agent') {
-          Get.offAll(() => const MainScreenAgent());
+          EasyLoading.showInfo("Accès non autorisé !");
         }
       }
     } catch (e) {

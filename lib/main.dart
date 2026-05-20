@@ -3,7 +3,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_easyloading/flutter_easyloading.dart';
 import 'package:get/get.dart';
 import 'package:get_storage/get_storage.dart';
-import 'package:taxenew/screens/auth/login2.dart';
+import '/screens/auth/login2.dart';
 import '/controllers/data_controller.dart';
 import '/screens/home_screen.dart';
 import '/utils/controllers.dart';

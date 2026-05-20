@@ -6,7 +6,6 @@ import 'package:get_storage/get_storage.dart';
 import 'package:taxenew/screens/auth/login2.dart';
 import '/controllers/data_controller.dart';
 import '/screens/home_screen.dart';
-import '/screens/main_screen_agent.dart';
 import '/utils/controllers.dart';
 import '/utils/translations.dart';
 import '/screens/auth/login.dart';
@@ -60,8 +59,6 @@ class _MyAppState extends State<MyApp> {
         final role = authController.user.value!.role;
         if (role == 'resident') {
           return const HomeScreen();
-        } else if (role == 'agent') {
-          return const MainScreenAgent();
         }
       }
     } catch (e) {
